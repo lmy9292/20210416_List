@@ -56,6 +56,8 @@ public class PeopleMain {
 			System.out.println(peoList.get(i));
 		}
 		ps.peoPrint(p1);
+		
+		
 	}
-
+		
 }

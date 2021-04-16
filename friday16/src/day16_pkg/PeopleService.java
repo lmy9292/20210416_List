@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PeopleService {
 	
-	//ArrayList를 받아와서 출력 하는 메소드 선언
+	//		 하는 메소드 선언
 	void listPrint(List<People> list1) {
 		//매개변수 안에는 ArrayList를 받아온다
 		System.out.println("listPrint 호출");
@@ -19,5 +19,8 @@ public class PeopleService {
 		System.out.println("PeoplePrint 호출");
 		System.out.println(pp);
 	}
-}
 	
+	
+
+	
+}
