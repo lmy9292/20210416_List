@@ -71,7 +71,14 @@ public class People {
 	//마우스 우클릭>source>Generate toString()...
 	@Override
 	public String toString() {
-		return "People [name=" + name + ", rNumber=" + rNumber + ", address=" + address + ", age=" + age + "]";
+		return "People [name=" 
+	+ name 
+	+ ", rNumber=" 
+	+ rNumber 
+	+ ", address=" 
+	+ address 
+	+ ", age=" 
+	+ age + "]";
 	}
 	
 	

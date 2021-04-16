@@ -44,6 +44,18 @@ public class PeopleMain {
 		System.out.println(peoList.get(0));
 		System.out.println(p1.toString());
 		
+		
+		
+		//PeopleService 클래스 객체 선언
+		PeopleService ps= new PeopleService();
+		//listPrint 메소드 호출
+		System.out.println("listPrint 호출 전");
+		ps.listPrint(peoList);
+		System.out.println("listPrint 호출 끝");
+		for(int i=0; i<peoList.size(); i++) {
+			System.out.println(peoList.get(i));
+		}
+		ps.peoPrint(p1);
 	}
 
 }
