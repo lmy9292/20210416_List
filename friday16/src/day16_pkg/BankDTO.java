@@ -12,7 +12,8 @@ public class BankDTO{
 	
 	
 
-	public  BankDTO(int clientNumber, String name, String accountNumber, int balance) {
+	public  BankDTO(int clientNumber, String name, 
+			String accountNumber, int balance) {
 		this.clientNumber = clientNumber;
 		this.name = name;
 		this.accountNumber = accountNumber;

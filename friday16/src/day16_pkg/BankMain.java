@@ -20,6 +20,7 @@ public class BankMain {
 			switch (select) {
 			case 1 :
 				 client =new BankDTO();
+				 int clientNumber=clientList.size()+1;
 				System.out.print("이름 :");
 				String name=scan.next();
 				System.out.print("계좌 :");
@@ -27,6 +28,7 @@ public class BankMain {
 				System.out.print("입금액 :");
 				int balance = scan.nextInt();
 				//입력받은 값을 BankDTO 객체 필드값으로 저장
+				client.setClientNumber(clientNumber);
 				client.setName(name);
 				client.setAccountNumber(accountNumber);
 				client.setBalance(balance);
