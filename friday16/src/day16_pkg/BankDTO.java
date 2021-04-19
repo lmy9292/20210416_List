@@ -1,24 +1,23 @@
 package day16_pkg;
-
-public class Bank {
+//DTO(Date Transfer object): 데이터 전달을 위한 객체(클래스)
+public class BankDTO{
 	private int clientNumber;
 	private String name;
-	private int accountNumber;
+	private String accountNumber;
 	private int balance;
 	
-	Bank(){
+	BankDTO(){
 		
 	}
+	
+	
 
-	public Bank(int clientNumber, String name, 
-			int accountNumber, int balance) {
-		super();
+	public  BankDTO(int clientNumber, String name, String accountNumber, int balance) {
 		this.clientNumber = clientNumber;
 		this.name = name;
 		this.accountNumber = accountNumber;
 		this.balance = balance;
-	}
-
+	}	
 	public int getClientNumber() {
 		return clientNumber;
 	}
@@ -35,11 +34,11 @@ public class Bank {
 		this.name = name;
 	}
 
-	public int getAccountNumber() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
-	public void setAccountNumber(int accountNumber) {
+	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 
@@ -50,15 +49,16 @@ public class Bank {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+
+	@Override
+	public String toString() {
+		return "Bank [clientNumber=" + clientNumber + ", name=" + name + ", accountNumber=" + accountNumber
+				+ ", balance=" + balance + "]";
+	}
+
 	
 	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 }
