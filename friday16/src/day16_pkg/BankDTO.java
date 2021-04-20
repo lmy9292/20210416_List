@@ -1,5 +1,8 @@
 package day16_pkg;
 //DTO(Date Transfer object): 데이터 전달을 위한 객체(클래스)
+//필드,기본생성자,매개변수있는생성자,getter/setter,to
+//DTO 클래스 사용 용도
+//게시판:게시글 등록용,회원:회원등록용,쇼핑몰:상품등록용
 public class BankDTO{
 	private int clientNumber;
 	private String name;
